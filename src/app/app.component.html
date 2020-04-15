@@ -3,11 +3,30 @@
   Perhitungan Angular
 </p>
 
-  <input [(ngModel)] = "a" type="text" id="txt1"> *
-  <input [(ngModel)] = "b" type="text" id="txt2"> 
-  {{ a*b }}
+  <input [(ngModel)] = "a" type="text" id="a"> ^
+  <input [(ngModel)] = "b" type="text" id="b"> 
+    <p>
+ <button (click)="KlikButton()">Hitung</button>
+ {{pesan}}
+ </p>
+ <ng-template
+  *ngIf = "cek; then Ganjil; else Genap">
+</ng-template>
+<ng-template #Ganjil>
+  <p>Ganjil {{ hasil }}</p>
+  <div *ngFor = "let data of PolaA">
+      {{data}}
+    </div>
+</ng-template>
+<ng-template #Genap>
+  <p>Genap {{ hasil }}</p>
+  <div *ngFor = "let data of PolaB">
+      {{data}}
+    </div>
+</ng-template>
+ 
 
-<ng-template *ngIf ="angka4 % 2 == 0; then showBlock; else notShowBlock">
+<!-- <ng-template *ngIf ="angka4 % 2 == 0; then showBlock; else notShowBlock">
  </ng-template>
 
   <ng-template #showBlock>
@@ -20,9 +39,5 @@
     <div *ngFor = "let data of PolaA">
       {{data}}
     </div>
-  </ng-template>
+  </ng-template> -->
 
-  <p>
- <button (click)="klikButton()">Hapus</button>
- {{pesan}}
- </p>
