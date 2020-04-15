@@ -31,8 +31,8 @@ export class AppComponent  {
   KlikButton()
   {
     this.hasil = 1;
-    this.angka1 = parseInt((document.getElementById("a")as HTMLInputElement).value);
-    this.angka2 = parseInt((document.getElementById("b")as HTMLInputElement).value);
+    this.angka1 = parseInt((document.getElementById("txt1")as HTMLInputElement).value);
+    this.angka2 = parseInt((document.getElementById("txt2")as HTMLInputElement).value);
     
     this.hasil = Math.pow(this.angka1,this.angka2);
 
