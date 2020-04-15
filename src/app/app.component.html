@@ -3,11 +3,11 @@
   Perhitungan Angular
 </p>
 
-  <input [(ngModel)] = "angka1" type="text" id="txt1"/> *
-  <input [(ngModel)] = "angka2" type="text" id="txt1"/> 
+  <input [(ngModel)] = "a" type="text" id="txt1"> *
+  <input [(ngModel)] = "b" type="text" id="txt2"> 
+  {{ a*b }}
 
-<ng-template
-  *ngIf ="angka4 == 0; then showBlock; else notShowBlock">
+<ng-template *ngIf ="angka4 % 2 == 0; then showBlock; else notShowBlock">
  </ng-template>
 
   <ng-template #showBlock>
