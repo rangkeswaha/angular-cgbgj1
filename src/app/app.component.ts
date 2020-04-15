@@ -9,8 +9,6 @@ export class AppComponent  {
   name = 'Angular';
 
 
-  // angka1 = parseInt("");
-  // angka2 = parseInt("");
   angka1 : number;
   angka2 : number;
   hasil : number;
